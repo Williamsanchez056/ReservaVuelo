@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyBook - Reserva tu Vuelo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">✈️ SkyBook</div>
+            <nav class="nav">
+                <a href="#" class="nav-link">Inicio</a>
+                <a href="#" class="nav-link">Mis Reservas</a>
+                <a href="#" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Vuela a Donde Desees</h1>
+            <p>Encuentra los mejores vuelos al mejor precio</p>
+        </div>
+    </section>
+
+    <!-- Search Form -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-form">
+                <div class="form-group">
+                    <label for="departure">Salida</label>
+                    <input type="text" id="departure" placeholder="De dónde">
+                </div>
+                <div class="form-group">
+                    <label for="arrival">Destino</label>
+                    <input type="text" id="arrival" placeholder="Hacia dónde">
+                </div>
+                <div class="form-group">
+                    <label for="departure-date">Fecha de Salida</label>
+                    <input type="date" id="departure-date">
+                </div>
+                <div class="form-group">
+                    <label for="return-date">Fecha de Regreso</label>
+                    <input type="date" id="return-date">
+                </div>
+                <div class="form-group">
+                    <label for="passengers">Pasajeros</label>
+                    <select id="passengers">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <button class="search-btn">Buscar Vuelos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flights Grid -->
+    <section class="flights-section">
+        <div class="container">
+            <h2 class="section-title">Vuelos Disponibles</h2>
+            <div class="flights-grid">
+                <!-- Flight Card 1 -->
+                <div class="flight-card">
+                    <div class="flight-header">
+                        <span class="airline">✈️ AeroMás</span>
+                        <span class="rating">★★★★★ (4.8)</span>
+                    </div>
+                    <div class="flight-details">
+                        <div class="flight-route">
+                            <div class="airport">
+                                <div class="time">08:30</div>
+                                <div class="location">Madrid (MAD)</div>
+                            </div>
+                            <div class="flight-arrow">
+                                <div class="duration">2h 45m</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="airport">
+                                <div class="time">11:15</div>
+                                <div class="location">Barcelona (BCN)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight-footer">
+                        <div class="price">
+                            <span class="amount">€89</span>
+                            <span class="person">por persona</span>
+                        </div>
+                        <button class="reserve-btn">Reservar</button>
+                    </div>
+                </div>
+
+                <!-- Flight Card 2 -->
+                <div class="flight-card">
+                    <div class="flight-header">
+                        <span class="airline">✈️ SkyTravel</span>
+                        <span class="rating">★★★★ (4.5)</span>
+                    </div>
+                    <div class="flight-details">
+                        <div class="flight-route">
+                            <div class="airport">
+                                <div class="time">10:00</div>
+                                <div class="location">Madrid (MAD)</div>
+                            </div>
+                            <div class="flight-arrow">
+                                <div class="duration">2h 30m</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="airport">
+                                <div class="time">12:30</div>
+                                <div class="location">Barcelona (BCN)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight-footer">
+                        <div class="price">
+                            <span class="amount">€125</span>
+                            <span class="person">por persona</span>
+                        </div>
+                        <button class="reserve-btn">Reservar</button>
+                    </div>
+                </div>
+
+                <!-- Flight Card 3 -->
+                <div class="flight-card">
+                    <div class="flight-header">
+                        <span class="airline">✈️ ExpressAir</span>
+                        <span class="rating">★★★★★ (4.9)</span>
+                    </div>
+                    <div class="flight-details">
+                        <div class="flight-route">
+                            <div class="airport">
+                                <div class="time">14:15</div>
+                                <div class="location">Madrid (MAD)</div>
+                            </div>
+                            <div class="flight-arrow">
+                                <div class="duration">2h 35m</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="airport">
+                                <div class="time">16:50</div>
+                                <div class="location">Barcelona (BCN)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight-footer">
+                        <div class="price">
+                            <span class="amount">€156</span>
+                            <span class="person">por persona</span>
+                        </div>
+                        <button class="reserve-btn">Reservar</button>
+                    </div>
+                </div>
+
+                <!-- Flight Card 4 -->
+                <div class="flight-card">
+                    <div class="flight-header">
+                        <span class="airline">✈️ AeroMás</span>
+                        <span class="rating">★★★★★ (4.8)</span>
+                    </div>
+                    <div class="flight-details">
+                        <div class="flight-route">
+                            <div class="airport">
+                                <div class="time">16:45</div>
+                                <div class="location">Madrid (MAD)</div>
+                            </div>
+                            <div class="flight-arrow">
+                                <div class="duration">2h 40m</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="airport">
+                                <div class="time">19:25</div>
+                                <div class="location">Barcelona (BCN)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight-footer">
+                        <div class="price">
+                            <span class="amount">€99</span>
+                            <span class="person">por persona</span>
+                        </div>
+                        <button class="reserve-btn">Reservar</button>
+                    </div>
+                </div>
+
+                <!-- Flight Card 5 -->
+                <div class="flight-card">
+                    <div class="flight-header">
+                        <span class="airline">✈️ SkyTravel</span>
+                        <span class="rating">★★★★ (4.6)</span>
+                    </div>
+                    <div class="flight-details">
+                        <div class="flight-route">
+                            <div class="airport">
+                                <div class="time">19:00</div>
+                                <div class="location">Madrid (MAD)</div>
+                            </div>
+                            <div class="flight-arrow">
+                                <div class="duration">2h 45m</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="airport">
+                                <div class="time">21:45</div>
+                                <div class="location">Barcelona (BCN)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight-footer">
+                        <div class="price">
+                            <span class="amount">€75</span>
+                            <span class="person">por persona</span>
+                        </div>
+                        <button class="reserve-btn">Reservar</button>
+                    </div>
+                </div>
+
+                <!-- Flight Card 6 -->
+                <div class="flight-card">
+                    <div class="flight-header">
+                        <span class="airline">✈️ ExpressAir</span>
+                        <span class="rating">★★★★★ (4.9)</span>
+                    </div>
+                    <div class="flight-details">
+                        <div class="flight-route">
+                            <div class="airport">
+                                <div class="time">21:30</div>
+                                <div class="location">Madrid (MAD)</div>
+                            </div>
+                            <div class="flight-arrow">
+                                <div class="duration">2h 50m</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="airport">
+                                <div class="time">00:20</div>
+                                <div class="location">Barcelona (BCN)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight-footer">
+                        <div class="price">
+                            <span class="amount">€199</span>
+                            <span class="person">por persona</span>
+                        </div>
+                        <button class="reserve-btn">Reservar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 SkyBook. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
